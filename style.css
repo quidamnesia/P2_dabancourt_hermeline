@@ -125,29 +125,30 @@ figure img {
 
 .hebergements main {
     width: 60%;
-    margin-left: 5%;
-    flex-direction: column;
     min-height: 100px; /*test*/
     background-color:#C8C8C8;
-    background-size: auto;
     border: 1px solid red; /*test*/
     border-radius: 20px 20px 20px 20px;
-    align-items: block;
+
 
 }
 
-.hebergements main figure {
+.hebergements main .locations {
+    display: flex;
+    border: 1px solid blue; /*test*/
+}
+
+.hebergements main .locations figure {
     border: 1px solid orangered;
     border-radius: 15px;
-    flex-direction: row;
+   /* flex-direction: row;*/
     background-color: white;
+  /*  max-width: 200px;*/
 }
 .hebergements main figure div {
     border: 1px solid pink;
     border-radius: 15px;
-    min-height: 50px;
-    height: 100%;
-    width: auto;
+   /* width: auto;*/
 }
 
 .hebergements aside {
