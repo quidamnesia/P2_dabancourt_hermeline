@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
+    font-weight: 100 1000;
+}
+
+body {
+    font-family: 'Raleway';
+    font-weight: normal;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+head {
+    hori
+}
+.referencement { 
+    display: none;
+}
+
+header #logo {
+    padding-left: 25px;
+    height: 90px;
+    width: auto;
+}
+
+.favoritestyled {
+    align-items: baseline;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.favoritestyled ul {
+    margin: 0 10px;
+    padding-top: 20px;
+}
+
+.favoritestyled li {
+    display: inline-block;
+}
+
+.favoritestyled li:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+.favoritestyled li a {
+    text-decoration: none;
+    color: black;
+}
+
+header #logo img {
+    height: 300px;
+    width: auto;
+}
+
+i #location {
+    background color: #C8C8C8;
+    border-radius: 15px 0 0 15px;
+}
+
+.badges button{
+    border: 2px solid #C8C8C8;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+}
+.badge button i {
+    color: #0065FC;
+    background-color: #94b1dd;
+    border-radius: 15px 15px 15px 15px;
+    padding: 5px;
+   
+}
+
+#recherche {    
+    padding: 10px;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    background-size: 300px;
+}
+
+
+h1 {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 14px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+figure img {
+    max-width: 200px;
+    flex-direction: column;
+}
+
+.hebergements {
+    display: flex;
+   justify-content: space-between;
+
+}
+
+.hebergements img {
+    display: none; 
+}
+
+.hebergements main {
+    width: 60%;
+    flex-direction: column;
+    min-height: 100px; /*test*/
+    background-color:#C8C8C8;
+    background-size: auto;
+    border: 1px solid red; /*test*/
+    border-radius: 20px 20px 20px 20px;
+    align-items: block;
+
+}
+
+.hebergements main figure {
+    border: 1px solid orangered;
+    border-radius: 15px;
+    flex-direction: row;
+    background-color: white;
+}
+.hebergements main figure div {
+    border: 1px solid pink;
+    border-radius: 15px;
+    min-height: 50px;
+    height: 100%;
+    width: auto;
+}
+
+.hebergements aside {
+    width: 30%;
+    flex-direction: column;
+    min-height: 100px; /*test*/
+    background-color:#C8C8C8;
+    background-size: auto;
+    border-radius: 20px 20px 20px 20px;
+    align-items: block;
+    border: 1px solid blue; /*test*/
+    
+}
+
+.hebergements aside div {
+    background-color: white;
+    image-resolution: 300px;
+    border-radius: 20px 20px 20px 20px;
+    width: 80%;
+    margin: 0;
+}
+
+.activites {
+    border: 1px solid green;
+    min-height: 100px; /*test*/
+}
+
+.activites div {
+    flex-direction: column;
+}
+
+.activites img {
+    display: none;
+}
+
+.footer {
+  
+}
+
+.footer div  {
+    display: table-cell;
+    
+}
