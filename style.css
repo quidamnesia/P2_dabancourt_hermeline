@@ -32,17 +32,19 @@ header #logo {
 }
 
 .favoritestyled ul {
-    margin: 0 10px;
-    padding-top: 20px;
+    margin: 0 ;
+    padding-top: 0;
 }
 
 .favoritestyled li {
     display: inline-block;
+    padding-top: 20px;
 }
 
 .favoritestyled li:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
+    
 }
 
 .favoritestyled li a {
@@ -61,11 +63,12 @@ i #location {
 }
 
 .badges button{
-    border: 2px solid #C8C8C8;
+    border: 1px solid #C8C8C8;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
+    padding: 0;
 }
-.badge button i {
+.badges button i {
     color: #0065FC;
     background-color: #94b1dd;
     border-radius: 15px 15px 15px 15px;
@@ -122,6 +125,7 @@ figure img {
 
 .hebergements main {
     width: 60%;
+    margin-left: 5%;
     flex-direction: column;
     min-height: 100px; /*test*/
     background-color:#C8C8C8;
