@@ -166,18 +166,31 @@ figure img {
     border-radius: 20px 20px 20px 20px;
     align-items: block;
     border: 1px solid blue; /*test*/
-    
+
+}
+.hebergements aside h2 {
+    display: inline-block;
 }
 
-.hebergements aside div {
-    background-color: white;
-    image-resolution: 300px;
-    border-radius: 20px 20px 20px 20px;
-    width: 80%;
-    margin: 0;
+.hebergements aside +i {
+    position: right;
+    top: 10px;
+    right: 10px;
+}
+
+.hebergements aside .populaires {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    border: 1px solid green; /*test*/
+
+}
+.hebergements aside .populaires figure {
+    background-color: white;
+    border: 1px solid red; /*test*/
+    image-resolution: 300px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .activites {
