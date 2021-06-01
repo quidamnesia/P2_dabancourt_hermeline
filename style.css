@@ -135,7 +135,14 @@ figure img {
 
 .hebergements main .locations {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     border: 1px solid blue; /*test*/
+}
+
+.hebergements main .locations>*{
+    flex: 30px;
 }
 
 .hebergements main .locations figure {
@@ -153,7 +160,6 @@ figure img {
 
 .hebergements aside {
     width: 30%;
-    flex-direction: column;
     min-height: 100px; /*test*/
     background-color:#C8C8C8;
     background-size: auto;
@@ -169,6 +175,9 @@ figure img {
     border-radius: 20px 20px 20px 20px;
     width: 80%;
     margin: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .activites {
