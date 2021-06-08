@@ -12,7 +12,7 @@ body {
     padding: 0;
 }
 head {
-    hori
+    
 }
 .referencement { 
     display: none;
@@ -57,10 +57,23 @@ header #logo img {
     width: auto;
 }
 
-i #location {
-    background color: #C8C8C8;
-    border-radius: 15px 0 0 15px;
+.rechercher i{
+    padding-left: 5px;
+
+    background-color: #C8C8C8;
+    border-radius: 10px 0 0 10px;
+
 }
+
+#recherche {    
+    padding: 2px;
+    padding-right: 5px;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    background-size: 300px;
+}
+
 
 .badges button{
     border: 1px solid #C8C8C8;
@@ -76,13 +89,6 @@ i #location {
    
 }
 
-#recherche {    
-    padding: 10px;
-    color: white;
-    background-color: #0065FC;
-    border-radius: 0 15px 15px 0;
-    background-size: 300px;
-}
 
 
 h1 {
