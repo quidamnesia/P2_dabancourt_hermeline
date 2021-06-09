@@ -25,6 +25,10 @@ h2 {
 p {
     font-size: 11px;
 }
+button {
+    font-size: 10px;
+    font-weight: 600;
+}
 
 i {
     font-size: 8px;
@@ -38,8 +42,9 @@ head {
 
 header #logo {
     padding-left: 25px;
-    height: 90px;
+    height: 20px;
     width: auto;
+    align-items: baseline;
 }
 
 .favoritestyled {
@@ -75,6 +80,8 @@ header #logo img {
     width: auto;
 }
 
+.rechercher
+
 .rechercher i{
     padding-left: 5px;
     background-color: #f2f2f2;
@@ -83,13 +90,17 @@ header #logo img {
 
 }
 
+.rechercher input {
+    max-height: 11px;
+}
+
 #recherche {    
     padding: 2px;
     padding-right: 5px;
     color: white;
     background-color: #0065FC;
     border-radius: 0 15px 15px 0;
-    background-size: 300px;
+    border: 0cm;
 }
 
 .badges button{
@@ -106,7 +117,13 @@ header #logo img {
    
 }
 
-
+#info i {
+    color: #0065FC;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
 
 
 nav {
@@ -129,12 +146,13 @@ figure img {
 
 }
 
-.hebergements img {
+ .hebergements img { 
     display: none; 
+    si
 }
 
 .hebergements main {
-    width: 60%;
+    width: 65%;
     min-height: 100px; /*test*/
     background-color:#f2f2f2;
     border: 1px solid red; /*test*/
@@ -204,8 +222,10 @@ figure img {
 }
 
 .activites {
+    display: flex;
     border: 1px solid green;
     min-height: 100px; /*test*/
+    flex-direction: row;
 }
 
 .activites div {
@@ -214,6 +234,7 @@ figure img {
 
 .activites img {
     display: none;
+    size: 50px;
 }
 
 .footer {
@@ -222,5 +243,4 @@ figure img {
 
 .footer div  {
     display: table-cell;
-    
 }
