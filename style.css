@@ -12,6 +12,10 @@ body {
     padding: 0;
 }
 
+figure {
+    margin: 0;
+}
+
 h1 {
     font-size: 18px;
     font-weight: 900;
@@ -36,36 +40,44 @@ i {
 head {
     
 }
+
+.title {
+    height: 90px;
+}
+
 .referencement { 
     display: none;
 }
 
 header #logo {
     padding-top: 20px;
-    height: 20px;
+    height: 36px;
     width: auto;
     align-items: baseline;
 }
 
-.favoritestyled {
+
+.navigation {
     align-items: baseline;
     position: absolute;
     top: 0;
     right: 0;
+    margin: 0;
 }
 
-.favoritestyled ul {
+.navigation ul {
     margin: 0 ;
     padding-top: 0;
 }
 
-.favoritestyled li {
+.navigation li {
     display: inline-block;
     padding-top: 0px;
     font-size: 10px;
+    padding: 20px;
 }
 
-.favoritestyled li:hover {
+.navigation li:hover {
     border-top: 2px solid #0065FC;
     border-spacing: 20px;
     color: #0065FC;
@@ -73,7 +85,7 @@ header #logo {
     
 }
 
-.favoritestyled li a {
+.navigation li a {
     text-decoration: none;
     color: black;
 }
@@ -155,16 +167,17 @@ figure img {
 
 .hebergements {
     display: flex;
-   justify-content: space-between;
-
+    justify-content: space-between;
+    height: 630px;
+    width: auto;
 }
 
  .hebergements img { 
-    /*display: none;*/ 
+    /*display: none; 
     display: flex;
     overflow: hidden;
     max-width: 100%;
-    max-height: 60%;
+    max-height: 60%;*/
 }
 
 .hebergements main {
@@ -178,32 +191,40 @@ figure img {
 }
 .hebergements main img { 
     border-radius: 10px 10px 0 0;
-
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .hebergements main .locations {
     display: flex;
     flex-wrap: wrap;
-    box-sizing: content-box;
     justify-content: space-around;
-    align-items: center;
     border: 1px solid blue; /*test*/
+    height: 430px;
+    align-content: space-around;
 }
 
-.hebergements main .locations>*{
-    flex: 10px;
-}
 
 .hebergements main .locations figure {
     border: 1px solid orangered;
     border-radius: 15px;
+    height: 200px;
+    width: 30%;
    /* flex-direction: row;*/
     background-color: white;
   /*  max-width: 200px;*/
 }
 .hebergements main figure div {
     border: 1px solid pink;
-    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0
+    height: 115px;
+    
+    overflow: hidden;
    /* width: auto;*/
 }
 
@@ -244,6 +265,7 @@ figure img {
     border: 1px solid red; /*test*/
     image-resolution: 300px;
     border-radius: 20px 20px 20px 20px;
+
     display: inline-block;
 
 
