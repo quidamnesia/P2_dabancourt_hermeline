@@ -17,25 +17,25 @@ figure {
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 900;
 }
 
 h2 {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 800;
 }
 
 p {
-    font-size: 9px;
+    font-size: 11px;
 }
 button {
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 600;
 }
 
 i {
-    font-size: 8px;
+    font-size: 15px;
 }
 head {
     
@@ -126,19 +126,21 @@ header #logo img {
 
 .badges p {
     font-weight: 800;
+    justify-content: center;
 }
 .badges button{
     border: 1px solid #f2f2f2;
     border-radius: 15px 15px 15px 15px;
+    width: auto;
     background-color: white;
-    padding: 0;
+    margin: 0;
     
 }
 .badges button i {
     color: #0065FC;
     background-color: #deebff;
     border-radius: 15px 15px 15px 15px;
-    padding: 5px;
+    padding: 2px;
    
 }
 
@@ -221,16 +223,12 @@ figure img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 15px 15px 0 0
     height: 115px;
-    
-    overflow: hidden;
-   /* width: auto;*/
+    border-radius: 15px 15px 0 0  
 }
 
 .hebergements aside {
     width: 30%;
-    min-height: 100px; /*test*/
     background-color:#f2f2f2;
     background-size: auto;
     border-radius: 20px 20px 20px 20px;
@@ -241,6 +239,9 @@ figure img {
 
 .hebergements aside img {
     border-radius: 15px 0 0 15px;
+   /* display: none;*/
+   height: 100%;
+   width: 40%;
 }
 .hebergements aside h2 {
     display: inline-block;
@@ -255,20 +256,29 @@ figure img {
 .hebergements aside .populaires {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    height: 430px;
     border: 1px solid green; /*test*/
 
 }
 .hebergements aside .populaires figure {
     background-color: white;
     border: 1px solid red; /*test*/
-    image-resolution: 300px;
     border-radius: 20px 20px 20px 20px;
-
+    align-items: baseline;
     display: inline-block;
+    height: 20%;
+    justify-content: space-around;
+    overflow: hidden;
 
+}
 
+.hebergements aside .populaires figure div{
+
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .activites {
