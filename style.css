@@ -223,11 +223,13 @@ figure img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    height: 20%;
     height: 115px;
     border-radius: 15px 15px 0 0  
 }
 
 .hebergements aside {
+    margin-right: 1%;
     width: 30%;
     background-color:#f2f2f2;
     background-size: auto;
@@ -237,12 +239,19 @@ figure img {
 
 }
 
+.hebergements aside .title{
+    display: inline-block;
+}
+
 .hebergements aside img {
     border-radius: 15px 0 0 15px;
    /* display: none;*/
-   height: 100%;
-   width: 40%;
-}
+   flex-shrink: 0;
+   width: 45%;
+    min-height: 100%;
+    padding: 3px;
+ }
+
 .hebergements aside h2 {
     display: inline-block;
 }
@@ -258,7 +267,7 @@ figure img {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 430px;
+    height: 530px;
     border: 1px solid green; /*test*/
 
 }
@@ -266,20 +275,22 @@ figure img {
     background-color: white;
     border: 1px solid red; /*test*/
     border-radius: 20px 20px 20px 20px;
-    align-items: baseline;
-    display: inline-block;
     height: 20%;
+    width: 85%;
     justify-content: space-around;
     overflow: hidden;
 
 }
 
 .hebergements aside .populaires figure div{
+    display: inline;
 
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
 }
+.hebergements aside .populaires figcaption {
+    display: inline;
+}
+
+
 
 .activites {
     display: flex;
