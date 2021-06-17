@@ -75,6 +75,7 @@ header #logo {
     padding-top: 0px;
     font-size: 10px;
     padding: 20px;
+    border-top: 2px solid white;
 }
 
 .navigation li:hover {
@@ -95,27 +96,37 @@ header #logo img {
     width: auto;
 }
 
-.rechercher
+.rechercher {
+    display: inline-block;
+    width: 420px;
+    height: 55px;
+    border: 2px solid #f2f2f2;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
 
 .rechercher i{
-    padding-left: 5px;
     background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
-    
-
+    padding: 20px;
+    margin-right: 20px;
 }
 
 .rechercher input {
-    max-height: 11px;
+    width: 190px;
+    
 }
 
-#recherche {    
-    padding: 2px;
-    padding-right: 5px;
+.rechercher button {    
     color: white;
     background-color: #0065FC;
     border-radius: 0 15px 15px 0;
     border: 0cm;
+    width: 133px;
+    height: 55px;
+    position: absolute;
+    right: 0;
 }
 
 .badges {
@@ -251,9 +262,11 @@ figure img {
     border-radius: 20px 0 0 20px;
    /* display: none;*/
     flex-shrink: 0;
-    width: 45%;
+    width: 35%;
     min-height: 95%;
     padding: 3px;
+    object-fit: cover;
+    max-height: 80%;
 
  }
 
@@ -289,13 +302,15 @@ figure img {
 
 .hebergements aside .populaires figure div{
     display: inline;
-
 }
-/*
+
 .hebergements aside .populaires figcaption {
     display: inline;
+    width: 65%;
+    margin: 0;
+    padding-top: 0;
 }
-*/
+
 
 
 .activites {
