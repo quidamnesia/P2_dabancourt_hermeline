@@ -9,7 +9,8 @@ body {
     font-weight: normal;
     color: black;
     margin: 0;
-    padding: 0;
+    padding: 2%;
+    justify-content: center;
 }
 
 figure {
@@ -17,17 +18,17 @@ figure {
 }
 
 h1 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 900;
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 800;
 }
 
 p {
-    font-size: 11px;
+    font-size: 12px;
 }
 button {
     font-size: 12px;
@@ -35,7 +36,7 @@ button {
 }
 
 i {
-    font-size: 15px;
+    font-size: 20px;
 }
 head {
     
@@ -50,7 +51,7 @@ head {
 }
 
 header #logo {
-    padding-top: 20px;
+    margin: 0;
     height: 36px;
     width: auto;
     align-items: baseline;
@@ -115,7 +116,8 @@ header #logo img {
 
 .rechercher input {
     width: 190px;
-    
+    border: none;
+
 }
 
 .rechercher button {    
@@ -133,6 +135,8 @@ header #logo img {
     display: flex;
     flex-direction: row;
     margin: 0;
+    justify-content: space-between;
+    width: 900px;
 }
 
 .badges p {
@@ -145,7 +149,7 @@ header #logo img {
     width: auto;
     background-color: white;
     margin: 0;
-    
+    width: 192px;
 }
 .badges button i {
     color: #0065FC;
@@ -197,7 +201,6 @@ figure img {
     width: 65%;
     min-height: 100px; /*test*/
     background-color:#f2f2f2;
-    border: 1px solid red; /*test*/
     border-radius: 20px 20px 20px 20px;
 
 
@@ -216,23 +219,22 @@ figure img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 1px solid blue; /*test*/
     height: 430px;
     align-content: space-around;
 }
 
 
 .hebergements main .locations figure {
-    border: 1px solid orangered;
+    /*border: 1px solid orangered;*/
     border-radius: 15px;
-    height: 200px;
+    min-height: 200px;
     width: 30%;
    /* flex-direction: row;*/
     background-color: white;
   /*  max-width: 200px;*/
 }
 .hebergements main figure div {
-    border: 1px solid pink;
+    /*border: 1px solid pink;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,7 +252,7 @@ figure img {
     background-size: auto;
     border-radius: 20px 20px 20px 20px;
     align-items: block;
-    border: 1px solid blue; /*test*/
+    /*border: 1px solid blue; test*/
 
 }
 
@@ -262,11 +264,7 @@ figure img {
     border-radius: 20px 0 0 20px;
    /* display: none;*/
     flex-shrink: 0;
-    width: 35%;
-    min-height: 95%;
-    padding: 3px;
     object-fit: cover;
-    max-height: 80%;
 
  }
 
@@ -286,26 +284,30 @@ figure img {
     justify-content: space-around;
     align-items: center;
     height: 530px;
-    border: 1px solid green; /*test*/
+    /*border: 1px solid green; test*/
 
 }
 .hebergements aside .populaires figure {
     background-color: white;
-    border: 1px solid red; /*test*/
+    /*border: 1px solid red; test*/
     border-radius: 20px 20px 20px 20px;
     height: 20%;
     width: 85%;
     justify-content: space-around;
     overflow: hidden;
-
+    display: flex;
 }
 
 .hebergements aside .populaires figure div{
-    display: inline;
+    border: solid 4px white;
+    width: 35%;
+    margin: 0;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
 }
 
 .hebergements aside .populaires figcaption {
-    display: inline;
     width: 65%;
     margin: 0;
     padding-top: 0;
