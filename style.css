@@ -258,6 +258,11 @@ figure img {
 
 .hebergements aside .title{
     display: inline-block;
+    width: 100%;
+}
+
+.hebergements aside .title i {
+    float: right;
 }
 
 .hebergements aside img {
