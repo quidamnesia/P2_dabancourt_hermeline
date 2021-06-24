@@ -116,12 +116,15 @@ header #logo img {
 
 .rechercher input {
     width: 190px;
-    border: none;
+    border: none;    
+}
 
+.rechercher input ::placeholder {
+    color: black;
+    font-weight: 600;
 }
 
 .rechercher button {    
-    display: flex;
     color: white;
     background-color: #0065FC;
     border-radius: 0 15px 15px 0;
