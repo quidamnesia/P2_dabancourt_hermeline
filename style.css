@@ -121,6 +121,7 @@ header #logo img {
 }
 
 .rechercher button {    
+    display: flex;
     color: white;
     background-color: #0065FC;
     border-radius: 0 15px 15px 0;
@@ -129,6 +130,7 @@ header #logo img {
     height: 55px;
     position: absolute;
     right: 0;
+
 }
 
 .badges {
@@ -144,6 +146,9 @@ header #logo img {
     justify-content: center;
 }
 .badges button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     border: 1px solid #f2f2f2;
     border-radius: 15px 15px 15px 15px;
     width: auto;
@@ -152,10 +157,16 @@ header #logo img {
     width: 192px;
 }
 .badges button i {
-    color: #0065FC;
+        color: #0065FC;
     background-color: #deebff;
     border-radius: 15px 15px 15px 15px;
     padding: 2px;
+    height: 100%;
+    width: 30px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
 }
 
@@ -323,23 +334,82 @@ figure img {
 .activites {
     display: flex;
     border: 1px solid green;
-    min-height: 100px; /*test*/
-    flex-direction: row;
-}
-
-.activites div {
+    height: 445px; /*test*/
     flex-direction: column;
 }
 
+.activites .title {
+    border: 1px solid red;
+    flex-direction: column;
+}
+
+.activites .columns {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.activites .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+    border: 1px solid green;
+}
+
+.activites figure {
+    border-radius: 20px;
+    border: 1px solid pink;
+    overflow: hidden;
+    object-fit: fill;
+}
+
+.activites figure.h100{
+    height: 100%;
+}
+
+.activites figure.h60 {
+    height: 55%;
+}
+
+.activites figure.h40 {
+    height: 35%;
+}
+
+.activites figure.h50 {
+    height: 45%;
+}
+
+.activites figure div {
+    min-height: 300px;
+}
+
+.activites figcaption {
+    height: 59px;
+}
+
 .activites img {
-    display: none;
-    size: 50px;
+   /* display: none;
+    min-height: 200px;*/
+    border-radius: 10px 10px 0 0;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 3px;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .footer {
-  
+    display: flex;
+    flex-direction: row;
+    background-color:#f2f2f2;
+    justify-content: space-around;
 }
 
 .footer div  {
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
 }
