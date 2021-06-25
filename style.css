@@ -4,6 +4,50 @@
     font-weight: 100 1000;
 }
 
+@media screen and (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column
+
+    }
+    
+    header {
+        width 100%;
+    }
+
+    .hebergements {
+        display: flex;
+        flex-direction: column;
+        min-height: 2000px;
+    }
+
+    .hebergements main {
+        display: flexbox;
+        flex-direction: column;
+        width: 100%;
+        height: 1400px;
+       
+    }
+
+
+    .hebergements main .locations {
+        display: flex;
+        flex-direction: column;
+        height: 1400px;
+    }    
+
+    .hebergements main .locations figure {
+        width: 100%;
+        
+    }
+
+    .hebergements aside {
+        display: block;
+        width: 100%;
+        height: 600px
+    }
+ }
+
 body {
     font-family: 'Raleway';
     font-weight: normal;
@@ -364,13 +408,15 @@ figure img {
     border-radius: 20px 20px 20px 20px;
     height: 25%;
     width: 85%;
-    justify-content: space-around;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     display: flex;
 }
 
 .hebergements aside .populaires figure div{
-    border: solid 4px white;
     width: 35%;
     margin: 0;
     overflow: hidden;
@@ -488,3 +534,4 @@ figure img {
     display: flex;
     flex-direction: column;
 }
+
