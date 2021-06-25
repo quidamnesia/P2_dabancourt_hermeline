@@ -30,6 +30,19 @@ h2 {
 p {
     font-size: 12px;
 }
+
+figcaption {
+    margin-left: 20px;
+}
+
+figcaption p {
+    margin-top: 0%;
+}
+
+figcaption i {
+    padding-bottom: 10px;
+}
+
 button {
     font-size: 12px;
     font-weight: 600;
@@ -79,6 +92,12 @@ header #logo {
     border-top: 2px solid white;
 }
 
+#inscription {
+    color: #0065FC;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .navigation li:hover {
     border-top: 2px solid #0065FC;
     border-spacing: 20px;
@@ -89,7 +108,6 @@ header #logo {
 
 .navigation li a {
     text-decoration: none;
-    color: black;
 }
 
 header #logo img {
@@ -98,7 +116,7 @@ header #logo img {
 }
 
 .rechercher {
-    display: inline-block;
+    display: flex;
     width: 420px;
     height: 55px;
     border: 2px solid #f2f2f2;
@@ -116,13 +134,12 @@ header #logo img {
 
 .rechercher input {
     width: 190px;
-    border: none;    
+    border: none; 
+    font-weight: 700; 
+    font-size: 16px;  
+    
 }
 
-.rechercher input ::placeholder {
-    color: black;
-    font-weight: 600;
-}
 
 .rechercher button {    
     color: white;
@@ -141,8 +158,10 @@ header #logo img {
     display: flex;
     flex-direction: row;
     margin: 0;
+    margin-top: 25px;
     justify-content: space-between;
     width: 900px;
+    
 }
 
 .badges p {
@@ -154,7 +173,7 @@ header #logo img {
     justify-content: flex-start;
     align-items: center;
     border: 1px solid #f2f2f2;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px;
     width: auto;
     background-color: white;
     margin: 0;
@@ -163,11 +182,12 @@ header #logo img {
 .badges button i {
         color: #0065FC;
     background-color: #deebff;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px;
     padding: 2px;
     height: 100%;
-    width: 30px;
+    width: 35px;
     margin-right: 20px;
+    margin-left: -6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,7 +197,7 @@ header #logo img {
 #info i {
     color: #0065FC;
     border: 1px solid #f2f2f2;
-    border-radius: 15px;
+    border-radius: 20px;
     padding-left: 3px;
     padding-right: 3px;
 }
@@ -268,8 +288,16 @@ figure img {
     overflow: hidden;
     margin: 3px;
     height: 25%;
-    height: 115px;
+    height: 118px;
     border-radius: 13px 13px 0 0  
+}
+
+.hebergements main .afficher {
+    display: flex;
+    align-items: center;
+    height: 110px;
+    margin-left: 20px;
+    font-weight: 700;
 }
 
  #grey {
@@ -300,6 +328,7 @@ figure img {
 .hebergements aside .title i {
     float: right;
     color: black;
+    font-size: 20px;
 }
 
 .hebergements aside img {
