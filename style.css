@@ -510,6 +510,7 @@ figure img {
     header {
         padding: 2%;
         width 100%;
+        margin-bottom: 50px;
     }
 
     header .navigation ul {
@@ -555,8 +556,7 @@ figure img {
     .hebergements {
         padding: 2%;
         display: flex;
-        flex-direction: column;
-        height: 2200px;
+        flex-direction: column-reverse;
     }
 
     .hebergements main {
@@ -564,6 +564,7 @@ figure img {
         flex-direction: column;
         width: 100%;
         height: 1400px;
+        background-color: white;
        
     }
 
@@ -576,14 +577,18 @@ figure img {
 
     .hebergements main .locations figure {
         width: 100%;
-        
+        box-shadow: 1px 1px 8px #f2f2f2;        
     }
 
-    .hebergements aside .populaires {
+    .hebergements aside {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 600px
+    }
+
+    .hebergements aside .populaires {
+        min-height: 580px;
     }
 
     .hebergements aside img {
@@ -592,15 +597,15 @@ figure img {
 
     .hebergements aside .populaires figure {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
 
     }
 
-    .hebergements aside .populaires div {
+    .hebergements aside .populaires figure div {
         width: 100%;
         border-radius: 0%;
-        height: 70%;
+        height: 100%;
     }
 
     .hebergements aside .populaires figure div img {
