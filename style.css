@@ -499,7 +499,7 @@ figure img {
     flex-direction: column;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 870px) {
     body {
         display: flex;
         flex-direction: column;
@@ -579,21 +579,33 @@ figure img {
         
     }
 
-    .hebergements aside {
-        display: block;
+    .hebergements aside .populaires {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: 600px
+    }
+
+    .hebergements aside img {
+        width: 100%;
     }
 
     .hebergements aside .populaires figure {
         display: flex;
         flex-direction: column;
         width: 100%;
+
     }
 
     .hebergements aside .populaires div {
         width: 100%;
-        border-radius: 20px 0 0 20px;
+        border-radius: 0%;
+        height: 70%;
+    }
+
+    .hebergements aside .populaires figure div img {
+        width: 100%;
+        height: auto;
     }
 
     /*.hebergements aside .populaires figcaption {
@@ -620,6 +632,12 @@ figure img {
 
     .activites .columns .column figure {
         height: 75%;
+        object-fit: cover;
+        
+    }
+
+    .activites figcaption {
+        height: 40%;
     }
 
     .footer {
