@@ -656,3 +656,9 @@ figure img {
         margin-left: 2%;
     }
  }
+
+ @media screen and (min-width: 870px) and (max-width: 1024px) {
+    body {
+        width: 100%;
+        margin: auto;
+    }
