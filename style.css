@@ -4,6 +4,7 @@
     font-weight: 100 1000;
 }
 
+
 body {
     font-family: 'Raleway';
     font-weight: normal;
@@ -202,12 +203,20 @@ header #logo img {
    
 }
 
+#info {
+    display: flex;
+    align-items: center;
+}
+
 #info i {
     color: #0065FC;
     border: 1px solid #f2f2f2;
-    border-radius: 20px;
-    padding-left: 3px;
-    padding-right: 3px;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    margin: 0 15px 0 0;
 }
 
 
@@ -229,7 +238,8 @@ figure img {
     display: flex;
     justify-content: space-between;
     height: 630px;
-    width: auto;
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 .hebergements i {
@@ -490,8 +500,7 @@ figure img {
     flex-direction: row;
     background-color:#f2f2f2;
     justify-content: space-around;
-    margin-left: -200px;
-    margin-right: -30px;
+    width: 100%;
 }
 
 .footer div  {
@@ -503,21 +512,43 @@ figure img {
 
 @media screen and (max-width: 870px) {
     body {
-        display: flex;
+        display: flex; 
         flex-direction: column;
         padding: 0%;
     }
     
     header {
+        
         padding: 2%;
         width: 100%;
         margin-bottom: 50px;
     }
 
+    header .navigation {
+        position: unset;
+    }
+
     header .navigation ul {
         display: flex;
         flex-direction: row;
+        position: relative;
+        border-bottom: 2px solid #f2f2f2;
+        border-spacing: 20px;
+    }
 
+    .navigation li:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        border-spacing: 20px;
+        color: #0065FC;
+        padding-bottom: 20px;
+        
+    }
+
+    #inscription {
+        position: absolute;
+        right: 0;
+        top: -50px;
     }
 
   
@@ -555,8 +586,18 @@ figure img {
         margin-left: -15px;
     }
 
+    .badges {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        margin: 25px 0 20px 0;
+        width: auto;
+    }
+
     .hebergements {
-        padding: 2%;
+        max-width: 94%;
+        margin: auto;
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: nowrap;
@@ -654,16 +695,14 @@ figure img {
     }
     
     .footer div {
-        margin-left: 2%;
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
  }
-
- /*tablet*/
-
- @media screen and (min-width: 870px) and (max-width: 1024px) {
-    body {
-        width: 100%;
-        margin: auto;
-    }
-
-}    
