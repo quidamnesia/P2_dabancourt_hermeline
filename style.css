@@ -10,7 +10,6 @@ body {
     font-weight: normal;
     color: black;
     margin: 0;
-    padding: 2%;
     justify-content: center;
 }
 
@@ -66,6 +65,10 @@ head {
 
 .referencement { 
     display: none;
+}
+
+header {
+    padding: 2%;
 }
 
 header #logo {
@@ -238,7 +241,7 @@ figure img {
     display: flex;
     justify-content: space-between;
     height: 630px;
-    max-width: 95%;
+    padding: 2%;
     margin: 0 auto;
 }
 
@@ -290,16 +293,13 @@ figure img {
 
 
 .hebergements .main .locations figure {
-    /*border: 1px solid orangered;*/
     border-radius: 15px;
     min-height: 200px;
     width: 30%;
-   /* flex-direction: row;*/
+    margin-bottom: 20px;
     background-color: white;
-  /*  max-width: 200px;*/
 }
 .hebergements .main figure div {
-    /*border: 1px solid pink;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,9 +328,6 @@ figure img {
     background-color:#f2f2f2;
     background-size: auto;
     border-radius: 20px 20px 20px 20px;
-    /*align-items: block;
-    border: 1px solid blue; test*/
-
 }
 
 .hebergements aside .title{
@@ -351,7 +348,6 @@ figure img {
 
 .hebergements aside img {
     border-radius: 20px 0 0 20px;
-   /* display: none;*/
     flex-shrink: 0;
     object-fit: cover;
 
@@ -362,7 +358,6 @@ figure img {
 }
 
 .hebergements aside +i {
-   /* position: right;*/
     top: 10px;
     right: 10px;
 }
@@ -373,12 +368,10 @@ figure img {
     justify-content: space-around;
     align-items: center;
     height: 530px;
-    /*border: 1px solid green; test*/
 
 }
 .hebergements aside .populaires figure {
     background-color: white;
-    /*border: 1px solid red; test*/
     border-radius: 20px 20px 20px 20px;
     height: 25%;
     width: 85%;
@@ -408,14 +401,13 @@ figure img {
 
 .activites {
     display: flex;
-    /*border: 1px solid green;*/
     height: 445px; /*test*/
     flex-direction: column;
     margin-left: -8px;
+    padding: 2%;
 }
 
 .activites .title {
-    /*border: 1px solid red;*/
     flex-direction: column;
 }
 
@@ -425,7 +417,8 @@ figure img {
     /*border: 1px solid black;*/
     overflow: hidden;
     justify-content: space-between;
-    padding: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .activites .column {
@@ -499,13 +492,16 @@ figure img {
     display: flex;
     flex-direction: row;
     background-color:#f2f2f2;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     width: 100%;
 }
 
 .footer div  {
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
+    margin-right: 250px;
 }
 
 /*mobile*/
@@ -518,10 +514,9 @@ figure img {
     }
     
     header {
-        
         padding: 2%;
         width: 100%;
-        margin-bottom: 50px;
+        padding-bottom: 150px;
     }
 
     header .navigation {
@@ -605,7 +600,7 @@ figure img {
 
     .hebergements .main {
         width: 100%;
-        height: 1400px;
+        height: auto;
         background-color: white;
        
     }
@@ -614,7 +609,7 @@ figure img {
     .hebergements .main .locations {
         display: flex;
         flex-direction: column;
-        height: 1400px;
+        height: auto;
     }    
 
     .hebergements .main .locations figure {
@@ -626,7 +621,7 @@ figure img {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 600px
+        height: auto;
     }
 
     .hebergements aside .populaires {
@@ -662,29 +657,39 @@ figure img {
     }*/
 
     .activites {
-        padding: 2%;
-        height: 1350px;
+        padding-left: 3%;
+        height: auto;
+        padding-top: 1500px;
     }
 
     .activites .columns {
         display: flex;
         flex-direction: column;
-        
+        height: auto;
+        padding-bottom: 200px;
     }
 
     .activites .columns .column {
         width: 100%;
-        height: 195px;
+        height: 200px;
     }
 
     .activites .columns .column figure {
-        height: 75%;
         object-fit: cover;
+        min-height: 192px;
+    
         
     }
 
+    .activites figure.h100 div {
+        height: 133px;
+    }
+
     .activites figcaption {
-        height: 40%;
+        /* height: 40%; */
+        display: flex;
+        align-items: center;
+    }
     }
 
     .footer {
