@@ -180,7 +180,7 @@ header #logo img {
     font-weight: 800;
     justify-content: center;
 }
-.badges button{
+.badges .button button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -191,7 +191,13 @@ header #logo img {
     margin: 0;
     width: 192px;
 }
-.badges button i {
+
+.badges .button {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+.badges .button i {
         color: #0065FC;
     background-color: #deebff;
     border-radius: 20px;
@@ -583,12 +589,23 @@ figure img {
 
     .badges {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
         margin: 25px 0 20px 0;
         width: auto;
     }
+
+    .badges .button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* width: auto; */
+    }
+
+    .badges .button button {
+        width: auto;
+    }
+    
 
     .hebergements {
         max-width: 94%;
@@ -635,7 +652,7 @@ figure img {
     .hebergements aside .populaires figure {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 94%;
 
     }
 
@@ -647,7 +664,7 @@ figure img {
 
     .hebergements aside .populaires figure div img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     /*.hebergements aside .populaires figcaption {
