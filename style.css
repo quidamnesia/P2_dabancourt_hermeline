@@ -520,9 +520,9 @@ figure img {
     }
     
     header {
-        padding: 2%;
-        width: 100%;
+        width: 90%;
         padding-bottom: 150px;
+        margin: auto;
     }
 
     header .navigation {
@@ -535,6 +535,8 @@ figure img {
         position: relative;
         border-bottom: 2px solid #f2f2f2;
         border-spacing: 20px;
+        padding-left: 0%;
+        margin: auto 0;
     }
 
     .navigation li:hover {
@@ -683,6 +685,7 @@ figure img {
         display: flex;
         flex-direction: column;
         height: auto;
+        padding-bottom: 200px;
     }
 
 
