@@ -599,7 +599,7 @@ figure img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /* width: auto; */
+        justify-content: flex-start;
     }
 
     .badges .button button {
@@ -683,8 +683,8 @@ figure img {
         display: flex;
         flex-direction: column;
         height: auto;
-        padding-bottom: 200px;
     }
+
 
     .activites .columns .column {
         width: 100%;
@@ -694,8 +694,11 @@ figure img {
     .activites .columns .column figure {
         object-fit: cover;
         min-height: 192px;
-    
-        
+           
+    }
+
+    .activites .columns .column-double {
+        height: 420px;
     }
 
     .activites figure.h100 div {
@@ -707,8 +710,7 @@ figure img {
         display: flex;
         align-items: center;
     }
-    }
-
+    
     .footer {
         margin: 0;
         padding: 0;
