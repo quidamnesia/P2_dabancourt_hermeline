@@ -106,12 +106,20 @@ header #logo {
     text-decoration: none;
 }
 
+#inscription a {
+    color: #0065FC;;
+}
+
 .navigation li:hover {
     border-top: 2px solid #0065FC;
     border-spacing: 20px;
     color: #0065FC;
     padding-bottom: 20px;
     
+}
+
+.navigation li:hover a {
+    color: #0065FC;
 }
 
 .navigation li a {
@@ -188,7 +196,7 @@ header #logo img {
     border-radius: 20px;
     width: auto;
     background-color: white;
-    margin: 0;
+    margin: 5px;
     width: 192px;
 }
 
@@ -198,13 +206,15 @@ header #logo img {
     justify-content: space-around;
 }
 .badges .button i {
-        color: #0065FC;
+    color: #0065FC;
+    font-size: 14px;
     background-color: #deebff;
     border-radius: 20px;
     padding: 2px;
     height: 100%;
-    width: 35px;
-    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
     margin-left: -6px;
     display: flex;
     align-items: center;
@@ -539,6 +549,11 @@ figure img {
         margin: auto 0;
     }
 
+    .navigation li {
+        width: 50%;
+        text-align: center;
+    }
+
     .navigation li:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
@@ -552,12 +567,14 @@ figure img {
         position: absolute;
         right: 0;
         top: -50px;
+        width: unset;
     }
 
+    
   
     .rechercher {
         display: flex;
-        width: 320px;
+        width: 290px;
         flex-direction: row;
 
     }
@@ -602,6 +619,10 @@ figure img {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
+    }
+
+    .badges.button i {
+        
     }
 
     .badges .button button {
@@ -669,16 +690,11 @@ figure img {
         height: 100%;
     }
 
-    /*.hebergements aside .populaires figcaption {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-    }*/
-
     .activites {
-        padding-left: 3%;
+        margin: auto;
         height: auto;
         padding-top: 1500px;
+        width: 94%;
     }
 
     .activites .columns {
