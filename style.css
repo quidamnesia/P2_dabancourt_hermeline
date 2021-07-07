@@ -445,6 +445,12 @@ figure img {
     /*border: 1px solid green;*/
 }
 
+.activites .columns .column-double {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .activites figure {
     border-radius: 20px;
     box-shadow: 1px 1px 8px #f2f2f2;
