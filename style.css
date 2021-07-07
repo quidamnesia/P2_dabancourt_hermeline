@@ -413,13 +413,14 @@ figure img {
     padding-left: 15px;
 }
 
-
+.activites h2 {
+    font-size: 16px;
+}
 
 .activites {
     display: flex;
     height: 445px; /*test*/
     flex-direction: column;
-    margin-left: -8px;
     padding: 2%;
 }
 
@@ -447,7 +448,7 @@ figure img {
 
 .activites .columns .column-double {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -543,6 +544,7 @@ figure img {
 
     header .navigation {
         position: unset;
+        display: block;
     }
 
     header .navigation ul {
@@ -707,7 +709,6 @@ figure img {
         display: flex;
         flex-direction: column;
         height: auto;
-        padding-bottom: 200px;
     }
 
 
