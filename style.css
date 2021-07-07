@@ -434,8 +434,7 @@ figure img {
     /*border: 1px solid black;*/
     overflow: hidden;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 8px;
 }
 
 .activites .column {
@@ -454,7 +453,7 @@ figure img {
 
 .activites figure {
     border-radius: 20px;
-    box-shadow: 1px 1px 8px #f2f2f2;
+    box-shadow: 4px 4px 8px #f2f2f2;
     overflow: hidden;
     object-fit: fill;
 }
@@ -506,7 +505,6 @@ figure img {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-    margin: 3px;
     max-height: 100%;
     object-fit: cover;
 }
@@ -705,10 +703,15 @@ figure img {
         width: 94%;
     }
 
+    .activites .title {
+        height: auto;
+    }
+
     .activites .columns {
         display: flex;
         flex-direction: column;
         height: auto;
+        margin-bottom: 20px;
     }
 
 
