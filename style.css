@@ -269,13 +269,6 @@ figure img {
 .hebergements .grey {
     color: #f2f2f2;
 }
- .hebergements img { 
-    /*display: none; 
-    display: flex;
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 60%;*/
-}
 
 .hebergements .main {
     width: 65%;
@@ -660,7 +653,7 @@ figure img {
 
     .hebergements .main .locations figure {
         width: 100%;
-        box-shadow: 1px 1px 8px #f2f2f2;        
+        box-shadow: 4px 4px 8px #f2f2f2;        
     }
 
     .hebergements aside {
@@ -718,16 +711,22 @@ figure img {
     .activites .columns .column {
         width: 100%;
         height: 200px;
+        
     }
 
     .activites .columns .column figure {
         object-fit: cover;
         min-height: 192px;
+        margin-bottom: 20px;
            
     }
 
     .activites .columns .column-double {
-        height: 420px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        height: 412px;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .activites figure.h100 div {
@@ -735,7 +734,6 @@ figure img {
     }
 
     .activites figcaption {
-        /* height: 40%; */
         display: flex;
         align-items: center;
     }
