@@ -153,6 +153,7 @@ header #logo img {
     border: none; 
     font-weight: 700; 
     font-size: 16px;  
+    font-family: 'Raleway';
     
 }
 
@@ -198,6 +199,7 @@ header #logo img {
     background-color: white;
     margin: 5px;
     width: 192px;
+    font-family: 'Raleway';
 }
 
 .badges .button {
