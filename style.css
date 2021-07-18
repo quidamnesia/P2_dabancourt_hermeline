@@ -55,9 +55,6 @@ button {
 i {
     font-size: 20px;
 }
-head {
-    
-}
 
 .title {
     height: 90px;
@@ -178,28 +175,39 @@ header #logo img {
 .badges {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin: 0;
     margin-top: 25px;
     justify-content: space-between;
-    width: 900px;
+    width: 830px;
+    font-weight: 600;
     
+}
+.badges div {
+    margin-right: 20px;
 }
 
 .badges p {
-    font-weight: 800;
+    font-size: 16px;
     justify-content: center;
 }
-.badges .button button {
+.badges .button div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     border-radius: 20px;
     width: auto;
     background-color: white;
-    margin: 5px;
-    width: 192px;
+    margin: 15px;
     font-family: 'Raleway';
+}
+
+.badges .button div a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    cursor: hand;
 }
 
 .badges .button {
@@ -395,7 +403,7 @@ figure img {
 }
 
 .hebergements aside .populaires figure div{
-    width: 35%;
+    
     margin: 0;
     overflow: hidden;
     justify-content: center;
@@ -620,10 +628,7 @@ figure img {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-    }
-
-    .badges.button i {
-        
+        margin: 0;
     }
 
     .badges .button button {
