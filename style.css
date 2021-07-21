@@ -214,6 +214,10 @@ header #logo img {
     display: flex;
     justify-content: space-around;
 }
+
+.badges .button div:hover {
+    background-color: #deebff;
+}
 .badges .button i {
     color: #0065FC;
     font-size: 14px;
@@ -269,9 +273,11 @@ figure img {
     padding: 2%;
     margin: 0 auto;
 }
-
+.hebergements h2 {
+    size: 14px;
+}
 .hebergements i {
-    font-size: 15px;
+    font-size: 12px;
     color: #0065FC;
 }
 
@@ -328,6 +334,11 @@ figure img {
     border-radius: 13px 13px 0 0  
 }
 
+.hebergements a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+}
 .hebergements .main .afficher {
     display: flex;
     align-items: center;
@@ -348,6 +359,9 @@ figure img {
     border-radius: 20px 20px 20px 20px;
 }
 
+.hebergements p {
+    margin-bottom: 0%;
+}
 .hebergements aside .title{
     width: 100%;
     display: flex;
@@ -373,11 +387,18 @@ figure img {
 
 .hebergements aside h2 {
     display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 0%;
 }
 
 .hebergements aside +i {
     top: 10px;
     right: 10px;
+}
+
+.hebergements aside a {
+    width: 100%;
+    display: flex;
 }
 
 .hebergements aside .populaires {
@@ -394,11 +415,9 @@ figure img {
     height: 25%;
     width: 85%;
     border: 3px solid white;
-    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    display: flex;
 }
 
 .hebergements aside .populaires figure div{
@@ -424,6 +443,11 @@ figure img {
     height: 445px; /*test*/
     flex-direction: column;
     padding: 2%;
+}
+
+.activites a {
+    text-decoration: none;
+    color: black;
 }
 
 .activites .title {
@@ -527,9 +551,11 @@ figure img {
     margin-right: 250px;
 }
 
+
+
 /*mobile*/
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 900px) {
     body {
         display: flex; 
         flex-direction: column;
@@ -673,12 +699,13 @@ figure img {
         min-height: 580px;
     }
 
+
     .hebergements aside img {
         width: 100%;
+        height: 100%;
     }
 
     .hebergements aside .populaires figure {
-        display: flex;
         flex-direction: row;
         width: 94%;
 
