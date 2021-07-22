@@ -31,15 +31,15 @@ p {
     font-size: 12px;
 }
 
-figcaption {
+.figcaption {
     margin-left: 20px;
 }
 
-figcaption p {
+.figcaption p {
     margin-top: 0%;
 }
 
-figcaption i {
+.figcaption i {
     padding-bottom: 10px;
 }
 
@@ -274,7 +274,7 @@ figure img {
     margin: 0 auto;
 }
 .hebergements h2 {
-    size: 14px;
+    font-size: 16px;
 }
 .hebergements i {
     font-size: 12px;
@@ -292,17 +292,36 @@ figure img {
     border-radius: 20px 20px 20px 20px;
 }
 
+.hebergements .main h2 {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.hebergements .main p {
+    margin-left: 2%;
+}
+
+.hebergements .main .figcaption {
+    margin-left: 2%;
+}
+
+.hebergements .main .etoiles {
+    margin-left: 2%;
+}
+
 .hebergements .main .title {
     display: flex;
     align-items: center;
     margin-left: 20px;
+    margin-bottom: 2%;
 }
+
+
 .hebergements .main img { 
     border-radius: 10px 10px 0 0;
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-    margin: 3px;
     max-height: 100%;
     object-fit: cover;
 }
@@ -318,13 +337,12 @@ figure img {
 
 .hebergements .main .locations figure {
     border-radius: 15px;
-    min-height: 200px;
+    height: 200px;
     width: 30%;
     margin-bottom: 20px;
     background-color: white;
 }
 .hebergements .main figure div {
-    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -368,7 +386,7 @@ figure img {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-left: -20px;
+    margin-left: -10%;
     width: 100%;
 }
 
@@ -378,12 +396,12 @@ figure img {
     font-size: 20px;
 }
 
-.hebergements aside img {
+/* .hebergements aside img { 
     border-radius: 20px 0 0 20px;
     flex-shrink: 0;
     object-fit: cover;
 
- }
+ }*/
 
 .hebergements aside h2 {
     display: inline-block;
@@ -420,15 +438,16 @@ figure img {
     overflow: hidden;
 }
 
-.hebergements aside .populaires figure div{
-    
+.hebergements aside .populaires figure .image{
+    display: flex;
     margin: 0;
     overflow: hidden;
     justify-content: center;
+    align-items: center;
     border-radius: 20px 0 0 20px;
 }
 
-.hebergements aside .populaires figcaption {
+.hebergements aside .populaires .figcaption {
     width: 65%;
     margin: 0;
     padding-left: 15px;
@@ -520,7 +539,7 @@ figure img {
     overflow: hidden;
 }
 
-.activites figcaption {
+.activites .figcaption {
     height: 59px;
 }
 
@@ -764,11 +783,6 @@ figure img {
 
     .activites figure.h100 div {
         height: 133px;
-    }
-
-    .activites figcaption {
-        display: flex;
-        align-items: center;
     }
     
     .footer {
